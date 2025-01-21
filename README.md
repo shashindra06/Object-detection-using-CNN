@@ -1,89 +1,82 @@
-# Object-detection-using-CNN
+# **Object Detection Using CNN**
 
 A deep learning project to classify images using the CIFAR-10 dataset with a Convolutional Neural Network (CNN). This project implements a custom CNN architecture for object detection and integrates Gradio for a simple user interface to test image classification.
 
+---
 
-**Table of Contents**
-Overview
-Features
-Dataset
-Installation
-Usage
-Results
-Technologies Used
-Contributing
+## **Table of Contents**
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Dataset](#dataset)
+4. [Results](#results)
+5. [Technologies Used](#technologies-used)
+6. [Contributing](#contributing)
 
+---
 
-**Overview**
+## **Overview**
 This project builds a Convolutional Neural Network (CNN) to classify images from the CIFAR-10 dataset, a collection of 60,000 32x32 color images across 10 categories. It employs data augmentation, dropout regularization, and batch normalization to enhance the model's accuracy and prevent overfitting. Gradio is used to provide an interactive interface for testing image classification.
 
+---
 
-**Features**
-CNN architecture with advanced techniques:
-Data augmentation using ImageDataGenerator.
-Dropout for regularization.
-Batch normalization for stable training.
-Learning rate scheduling and early stopping.
-Gradio-based interface for testing images in real-time.
-Model trained on CIFAR-10 dataset with 10 categories.
+## **Features**
+- CNN architecture with advanced techniques:
+  - Data augmentation using `ImageDataGenerator`.
+  - Dropout for regularization.
+  - Batch normalization for stable training.
+  - Learning rate scheduling and early stopping.
+- Gradio-based interface for testing images in real-time.
+- Model trained on CIFAR-10 dataset with 10 categories.
 
-**Dataset**
-The project uses the CIFAR-10 dataset, which contains 10 classes:
+---
 
-Airplane
-Automobile
-Bird
-Cat
-Deer
-Dog
-Frog
-Horse
-Ship
-Truck
+## **Dataset**
+The project uses the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html), which contains 10 classes:
+1. Airplane  
+2. Automobile  
+3. Bird  
+4. Cat  
+5. Deer  
+6. Dog  
+7. Frog  
+8. Horse  
+9. Ship  
+10. Truck
 
-**Installation**
-To run the project locally, 
-Clone this repository
-Ensure you have the necessary libraries:
+---
 
-TensorFlow
-Keras
-Gradio
-NumPy
-OpenCV
-Matplotlib
+## **Results**
 
-**Usage**
-Run the training script to train the model:
+### **Training Summary**
 
-Launch the Gradio interface for testing
+- **Model Architecture:** Sequential CNN with 4 convolutional blocks.  
+- **Training Accuracy:** Approximately 88% (achieved during training).  
+- **Validation Accuracy:** Approximately 85% (on validation data).  
+- **Test Accuracy:** 83% (on CIFAR-10 test data).
 
-Upload an image in the Gradio interface to see the predicted class.
+### **Example Predictions**
 
-**Results**
-Training Summary
-Model Architecture: Sequential CNN with 4 convolutional blocks.
-Training Accuracy: Approximately 88% (achieved during training).
-Validation Accuracy: Approximately 85% (on validation data).
-Test Accuracy: 83% (on CIFAR-10 test data).
-Example Predictions
-Input: Image of a dog.
-Prediction: Dog.
-Confidence: 95%.
-Input: Image of an airplane.
-Prediction: Airplane.
-Confidence: 92%.
+| **Input**                  | **Prediction** | **Confidence** |
+|----------------------------|----------------|----------------|
+| Image of a dog             | Dog            | 95%            |
+| Image of an airplane       | Airplane       | 92%            |
 
+---
 
-**Technologies Used**
-Frameworks/Libraries: TensorFlow, Keras, Gradio.
-Programming Language: Python.
-Dataset: CIFAR-10
+## **Technologies Used**
 
-.
-**Contributing**
+- **Frameworks/Libraries:** TensorFlow, Keras, Gradio  
+- **Programming Language:** Python  
+- **Dataset:** CIFAR-10  
+
+---
+
+## **Contributing**
+
 Contributions are welcome! If you want to improve this project or fix issues, please:
 
-Fork the repository.
-Make your changes.
-Submit a pull request.
+1. Fork the repository.  
+2. Make your changes.  
+3. Submit a pull request.
+
+---
