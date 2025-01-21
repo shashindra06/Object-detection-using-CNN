@@ -3,7 +3,7 @@
 A deep learning project to classify images using the CIFAR-10 dataset with a Convolutional Neural Network (CNN). This project implements a custom CNN architecture for object detection and integrates Gradio for a simple user interface to test image classification.
 
 
-##Table of Contents
+**Table of Contents**
 Overview
 Features
 Dataset
@@ -14,11 +14,11 @@ Technologies Used
 Contributing
 
 
-##Overview
+**Overview**
 This project builds a Convolutional Neural Network (CNN) to classify images from the CIFAR-10 dataset, a collection of 60,000 32x32 color images across 10 categories. It employs data augmentation, dropout regularization, and batch normalization to enhance the model's accuracy and prevent overfitting. Gradio is used to provide an interactive interface for testing image classification.
 
 
-##Features
+**Features**
 CNN architecture with advanced techniques:
 Data augmentation using ImageDataGenerator.
 Dropout for regularization.
@@ -27,7 +27,7 @@ Learning rate scheduling and early stopping.
 Gradio-based interface for testing images in real-time.
 Model trained on CIFAR-10 dataset with 10 categories.
 
-##Dataset
+**Dataset**
 The project uses the CIFAR-10 dataset, which contains 10 classes:
 
 Airplane
@@ -41,7 +41,7 @@ Horse
 Ship
 Truck
 
-##Installation
+**Installation**
 To run the project locally, 
 Clone this repository
 Ensure you have the necessary libraries:
@@ -53,14 +53,14 @@ NumPy
 OpenCV
 Matplotlib
 
-##Usage
+**Usage**
 Run the training script to train the model:
 
 Launch the Gradio interface for testing
 
 Upload an image in the Gradio interface to see the predicted class.
 
-##Results
+**Results**
 Training Summary
 Model Architecture: Sequential CNN with 4 convolutional blocks.
 Training Accuracy: Approximately 88% (achieved during training).
@@ -75,13 +75,13 @@ Prediction: Airplane.
 Confidence: 92%.
 
 
-##Technologies Used
+**Technologies Used**
 Frameworks/Libraries: TensorFlow, Keras, Gradio.
 Programming Language: Python.
 Dataset: CIFAR-10
 
 .
-##Contributing
+**Contributing**
 Contributions are welcome! If you want to improve this project or fix issues, please:
 
 Fork the repository.
