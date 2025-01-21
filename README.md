@@ -1,17 +1,89 @@
 # Object-detection-using-CNN
 
-CIFAR-10 CNN Project Readme: This project focuses on using Convolutional Neural Networks (CNNs) to classify images from the CIFAR-10 dataset. The CIFAR-10 dataset contains 60,000 32x32 color training images and 10,000 test images, each labeled with one of 10 classes: airplanes, cars, birds, cats, deer, dogs, frogs, horses, ships, and trucks.
+A deep learning project to classify images using the CIFAR-10 dataset with a Convolutional Neural Network (CNN). This project implements a custom CNN architecture for object detection and integrates Gradio for a simple user interface to test image classification.
 
-Requirements: Python 3.x TensorFlow 2.x or higher NumPy Matplotlib (for plotting results)
 
-Data: The CIFAR-10 dataset is available for download from the Canadian Institute for Advanced Research. The dataset is split into 50,000 training images and 10,000 test images. Each image is 32x32x3 (32 pixels in height and width, 3 color channels: red, green, blue).
+##Table of Contents
+Overview
+Features
+Dataset
+Installation
+Usage
+Results
+Technologies Used
+Contributing
 
-Model: The model used in this project is a simple CNN with three convolutional layers, followed by a fully connected layer and a softmax layer for classification. The model is trained using the categorical cross-entropy loss and the Adam optimization algorithm.
 
-Training and Evaluation: The model is trained for a specified number of epochs using the CIFAR-10 training data. The model's accuracy on the test data is evaluated after each epoch, and the final test accuracy is reported.
+##Overview
+This project builds a Convolutional Neural Network (CNN) to classify images from the CIFAR-10 dataset, a collection of 60,000 32x32 color images across 10 categories. It employs data augmentation, dropout regularization, and batch normalization to enhance the model's accuracy and prevent overfitting. Gradio is used to provide an interactive interface for testing image classification.
 
-Interface: The output of the model gives 72 hours sharable link which redirects to gradio interface.
 
-Results: The model should achieve an accuracy of around 75-88% on the CIFAR-10 test data after training for 20-50 epochs. Results may vary depending on the random initialization of weights and the specific hyperparameters used.
+##Features
+CNN architecture with advanced techniques:
+Data augmentation using ImageDataGenerator.
+Dropout for regularization.
+Batch normalization for stable training.
+Learning rate scheduling and early stopping.
+Gradio-based interface for testing images in real-time.
+Model trained on CIFAR-10 dataset with 10 categories.
 
-Conclusion: This project demonstrates how CNNs can be used to classify images from the CIFAR-10 dataset with good accuracy. It provides a simple starting point for further experimentation and improvement, such as using deeper networks or more advanced techniques such as data augmentation.
+##Dataset
+The project uses the CIFAR-10 dataset, which contains 10 classes:
+
+Airplane
+Automobile
+Bird
+Cat
+Deer
+Dog
+Frog
+Horse
+Ship
+Truck
+
+##Installation
+To run the project locally, 
+Clone this repository
+Ensure you have the necessary libraries:
+
+TensorFlow
+Keras
+Gradio
+NumPy
+OpenCV
+Matplotlib
+
+##Usage
+Run the training script to train the model:
+
+Launch the Gradio interface for testing
+
+Upload an image in the Gradio interface to see the predicted class.
+
+##Results
+Training Summary
+Model Architecture: Sequential CNN with 4 convolutional blocks.
+Training Accuracy: Approximately 88% (achieved during training).
+Validation Accuracy: Approximately 85% (on validation data).
+Test Accuracy: 83% (on CIFAR-10 test data).
+Example Predictions
+Input: Image of a dog.
+Prediction: Dog.
+Confidence: 95%.
+Input: Image of an airplane.
+Prediction: Airplane.
+Confidence: 92%.
+
+
+##Technologies Used
+Frameworks/Libraries: TensorFlow, Keras, Gradio.
+Programming Language: Python.
+Dataset: CIFAR-10
+
+.
+##Contributing
+Contributions are welcome! If you want to improve this project or fix issues, please:
+
+Fork the repository.
+Make your changes.
+Submit a pull request.
